@@ -12,6 +12,11 @@ public class Person {
 	}
 
 	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+
+	@Override
 	public int hashCode() {
 		return Objects.hash(age, name);
 	}
@@ -27,9 +32,5 @@ public class Person {
 		Person other = (Person) obj;
 		return age == other.age && Objects.equals(name, other.name);
 	}
-
-
-
-	
 
 }
