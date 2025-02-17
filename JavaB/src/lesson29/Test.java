@@ -7,5 +7,6 @@ public static void main(String[] args) {
 	
 	Transport car2=new Car();
 	car2.move();
+	
 }
 }
